@@ -4,10 +4,8 @@ OBJS = tetris.c fundamentals.c SDL2/SDL2_gfxPrimitives.c SDL2/SDL2_framerate.c S
 
 INCLUDE_PATHS = -IC:/SDL/SDL2-2.0.10/i686-w64-mingw32/include/SDL2
 INCLUDE_PATHS += -IC:/SDL/SDL2_image-2.0.5/i686-w64-mingw32/include/SDL2
-INCLUDE_PATHS += -IC:/SDL/SDL2_ttf-2.0.15/i686-w64-mingw32/include/SDL2
 LIBRARY_PATHS = -LC:/SDL/SDL2-2.0.10/i686-w64-mingw32/lib
 LIBRARY_PATHS += -LC:/SDL/SDL2_image-2.0.5/i686-w64-mingw32/lib
-LIBRARY_PATHS += -LC:/SDL/SDL2_ttf-2.0.15/i686-w64-mingw32/lib
 
 # -w (suppresses all warnings)
 # -Wl,-subsystem (windows gets rid of the console window)
@@ -16,7 +14,7 @@ LIBRARY_PATHS += -LC:/SDL/SDL2_ttf-2.0.15/i686-w64-mingw32/lib
 COMPILER_FLAGS = -w
 #COMPILER_FLAGS = -Wall -g
 
-LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
+LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 
 OBJ_NAME = Tetris
 
